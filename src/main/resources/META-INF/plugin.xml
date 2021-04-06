@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>io.github.seggan.slimefunaddonplugin.slimefun-addon-plugin</id>
+    <name>Slimefun Addon Devkit</name>
+    <vendor email="segganew@gmail.com">GitHub</vendor>
+
+    <description><![CDATA[
+    An Intellij Plugin for development of Slimefun addons
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>com.intellij.modules.idea</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+
+        <action id="io.github.seggan.slimefunaddonplugin.AddNewItem"
+                class="io.github.seggan.slimefunaddonplugin.AddNewItem" text="Slimefun Item">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
