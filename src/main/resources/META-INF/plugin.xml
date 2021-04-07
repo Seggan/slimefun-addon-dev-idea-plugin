@@ -16,6 +16,14 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <localInspection language="JAVA"
+                         displayName="'==' or '!=' used to compare references"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="WARNING"
+                         implementationClass="io.github.seggan.slimefunaddonplugin.inspections.ReferenceComparison"/>
     </extensions>
 
     <actions>
