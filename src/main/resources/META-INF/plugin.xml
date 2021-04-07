@@ -21,9 +21,17 @@
     <actions>
         <!-- Add your actions here -->
 
-        <action id="io.github.seggan.slimefunaddonplugin.AddNewItem"
-                class="io.github.seggan.slimefunaddonplugin.AddNewItem" text="Slimefun Item">
+        <action id="io.github.seggan.slimefunaddonplugin.sfitemstack.AddNewItem"
+                class="io.github.seggan.slimefunaddonplugin.sfitemstack.AddNewItem" text="Slimefun Item">
             <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+        <group id="io.github.seggan.slimefunaddonplugin.SlimefunGroup"
+               class="io.github.seggan.slimefunaddonplugin.SlimefunGroup" text="Slimefun">
+            <add-to-group group-id="NewGroup" anchor="last"/>
+        </group>
+        <action id="io.github.seggan.slimefunaddonplugin.newgroup.machine.AddNewMachine"
+                class="io.github.seggan.slimefunaddonplugin.newgroup.machine.AddNewMachine" text="Basic Machine">
+            <add-to-group group-id="io.github.seggan.slimefunaddonplugin.SlimefunGroup" anchor="first"/>
         </action>
     </actions>
 </idea-plugin>

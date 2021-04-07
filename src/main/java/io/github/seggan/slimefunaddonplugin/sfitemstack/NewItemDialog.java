@@ -1,4 +1,4 @@
-package io.github.seggan.slimefunaddonplugin;
+package io.github.seggan.slimefunaddonplugin.sfitemstack;
 
 import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.openapi.ui.ValidationInfo;
@@ -15,7 +15,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-public class NewItemDialog extends DialogWrapper {
+class NewItemDialog extends DialogWrapper {
 
     private static final Pattern SCREAMING_SNAKE = Pattern.compile("[A-Z_]+");
     private static final Pattern NEWLINE = Pattern.compile("\\n");

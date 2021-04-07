@@ -9,7 +9,7 @@ public class ErrorDialog extends DialogWrapper {
 
     private final String message;
 
-    protected ErrorDialog(String message) {
+    public ErrorDialog(String message) {
         super(true);
         this.message = message;
 
