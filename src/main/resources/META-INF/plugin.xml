@@ -1,10 +1,10 @@
 <idea-plugin>
     <id>io.github.seggan.slimefunaddonplugin.slimefun-addon-plugin</id>
-    <name>Slimefun Addon Devkit</name>
-    <vendor email="segganew@gmail.com">GitHub</vendor>
+    <name>Slimefun Addon Development</name>
+    <vendor email="segganew@gmail.com">Seggan</vendor>
 
     <description><![CDATA[
-    An Intellij Plugin for development of Slimefun addons
+    An Intellij plugin for development of Slimefun addons
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
