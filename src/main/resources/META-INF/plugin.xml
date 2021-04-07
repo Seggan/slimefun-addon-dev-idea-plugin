@@ -23,7 +23,7 @@
 
         <action id="io.github.seggan.slimefunaddonplugin.AddNewItem"
                 class="io.github.seggan.slimefunaddonplugin.AddNewItem" text="Slimefun Item">
-            <add-to-group group-id="NewGroup" anchor="first"/>
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
         </action>
     </actions>
 </idea-plugin>

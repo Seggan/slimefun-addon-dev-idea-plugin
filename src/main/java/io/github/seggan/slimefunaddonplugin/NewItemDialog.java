@@ -41,7 +41,7 @@ public class NewItemDialog extends DialogWrapper {
 
         this.init();
         this.setTitle("Create a Slimefun Item");
-        this.setSize(500, 500);
+        this.setSize(600, 500);
         this.setOKButtonText("Create");
     }
 
