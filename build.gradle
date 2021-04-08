@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'io.github.seggan.slimefunaddonplugin'
-version 'B1'
+version 'B3'
 
 repositories {
     mavenCentral()
@@ -22,9 +22,13 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+      Added Inspection for SLimefun item registering
+      Added Generate > Slimefun Item"""
 }
 test {
     useJUnitPlatform()
+}
+
+publishPlugin {
+    token intellijPublishToken
 }
