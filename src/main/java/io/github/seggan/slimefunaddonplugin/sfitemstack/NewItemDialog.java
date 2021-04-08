@@ -34,7 +34,6 @@ class NewItemDialog extends DialogWrapper {
     private final JTextField materialField = new JTextField();
     private final JTextField nameField = new JTextField();
     private final JTextArea loreField = new JTextArea();
-    private final JCheckBox insertWhiteSpace = new JCheckBox();
 
     public NewItemDialog() {
         super(true);
@@ -71,14 +70,6 @@ class NewItemDialog extends DialogWrapper {
         label = new JLabel("Name:");
         individual.add(label);
         individual.add(nameField);
-        top.add(individual);
-
-        individual = new JPanel();
-
-        label = new JLabel("Insert Leading Whitespace in Lore");
-        insertWhiteSpace.setSelected(true);
-        individual.add(insertWhiteSpace);
-        individual.add(label);
         top.add(individual);
 
         top.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -119,9 +110,5 @@ class NewItemDialog extends DialogWrapper {
 
     public JTextArea getLoreField() {
         return loreField;
-    }
-
-    public JCheckBox getInsertWhiteSpace() {
-        return insertWhiteSpace;
     }
 }

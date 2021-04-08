@@ -21,9 +21,6 @@ import com.intellij.psi.PsiType;
 import com.intellij.psi.tree.IElementType;
 import com.siyeh.ig.psiutils.ExpressionUtils;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
-import javax.swing.*;
 
 public class ReferenceComparison extends AbstractBaseJavaLocalInspectionTool {
 
@@ -56,11 +53,6 @@ public class ReferenceComparison extends AbstractBaseJavaLocalInspectionTool {
             public void visitReferenceExpression(PsiReferenceExpression expression) {
             }
         };
-    }
-
-    @Override
-    public @Nullable JComponent createOptionsPanel() {
-        return null;
     }
 
     private static class Fix implements LocalQuickFix {

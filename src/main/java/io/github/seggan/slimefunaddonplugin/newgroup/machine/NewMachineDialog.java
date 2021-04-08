@@ -5,11 +5,8 @@ import com.intellij.openapi.ui.ValidationInfo;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
-import java.util.regex.Pattern;
 
 class NewMachineDialog extends DialogWrapper {
-
-    private static final Pattern DIGIT = Pattern.compile("\\d");
 
     private final JTextField classNameField = new JTextField();
 
