@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'io.github.seggan.slimefunaddonplugin'
-version '0.1.0'
+version '0.2.0'
 sourceCompatibility = 11
 
 repositories {
@@ -24,8 +24,7 @@ intellij {
 patchPluginXml {
     pluginDescription = ""
     changeNotes = """
-      Added Inspection for Slimefun item registering
-      Added Generate > Slimefun Item"""
+      Removed reference comparison inspection"""
 }
 test {
     useJUnitPlatform()
