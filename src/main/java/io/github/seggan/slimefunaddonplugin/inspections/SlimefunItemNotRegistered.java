@@ -23,6 +23,8 @@ import com.intellij.psi.util.PsiTreeUtil;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
+
 public class SlimefunItemNotRegistered extends AbstractBaseJavaLocalInspectionTool {
 
     @Override
@@ -85,6 +87,6 @@ public class SlimefunItemNotRegistered extends AbstractBaseJavaLocalInspectionTo
 
     @NotNull
     private static PsiClass findClass(String fqName, Project project) {
-        return JavaPsiFacade.getInstance(project).findClass(fqName, GlobalSearchScope.everythingScope(project));
+        return Objects.requireNonNull(JavaPsiFacade.getInstance(project).findClass(fqName, GlobalSearchScope.everythingScope(project)));
     }
 }

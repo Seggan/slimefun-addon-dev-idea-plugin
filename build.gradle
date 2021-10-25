@@ -1,28 +1,30 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.7.2'
+    id 'org.jetbrains.intellij' version '1.2.0'
 }
 
 group 'io.github.seggan.slimefunaddonplugin'
-version 'B3'
+version '0.1.0'
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2020.3.3'
+    version = '2021.2.3'
     plugins = ['com.intellij.java']
 }
 patchPluginXml {
-    changeNotes """
-      Added Inspection for SLimefun item registering
+    pluginDescription = ""
+    changeNotes = """
+      Added Inspection for Slimefun item registering
       Added Generate > Slimefun Item"""
 }
 test {
@@ -30,5 +32,5 @@ test {
 }
 
 publishPlugin {
-    token intellijPublishToken
+    token = intellijPublishToken
 }
